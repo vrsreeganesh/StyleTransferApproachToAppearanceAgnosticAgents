@@ -1,4 +1,4 @@
-# EC523_Project
+# EC523 Project: A Neural-Style-Transfer Approach to Appearance Agnostic Agents
 
 Most of the word was done on SCC. So all the files are present there.
 However, I have copied the main scripts into this repository. 
