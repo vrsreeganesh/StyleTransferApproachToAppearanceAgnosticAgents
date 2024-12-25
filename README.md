@@ -7,7 +7,7 @@
 Sim2Real is a training-approach in Robotics where an agent is trained in simulation and deployed in real environments. In this paper, we investigate Neural Style Transfer as a domain randomization approach to Sim2Real.
 
 ## Contents
-This repository contains the code for *A style Transfer Approach to Appearance Agnostic Agents*. To reproduce results, follow the following set of steps. **Update**: This project was implemented in the BU Shared Computing Cluster. The dataset (> 100GB) has been cleared to make more space for other lab members. Unfortunately, the data will have to be remade.
+This repository contains the code for *A style Transfer Approach to Appearance Agnostic Agents*. To reproduce results, follow the following set of steps. **Update**: This project was implemented in the Boston University Shared Computing Cluster. The dataset (> 100GB) has been cleared to make more space for other lab members. Unfortunately, the data will have to be remade.
 
 ## Result Reproduction
 ### Setup
