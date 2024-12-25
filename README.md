@@ -45,3 +45,18 @@ The code for training is given in the zip file, TrainingRelated. The python file
 
 ## Evaluation
 The python training scipts are available as, "evaluate_offline\*\_regnety\_\*.py". Run the corresponding bash script to evaluate models, "offline_eval_\*\_regnety\_\*.sh". The script takes around 5 minutes to run and produces csv files documenting the different error metrics for different time steps. 
+
+## Results
+![Table1](Figures/tab1.png)
+![Table2](Figures/tab2.png)
+![Table3](Figures/tab3.png)
+
+![Table4](Figures/tab4.png)
+![Table5](Figures/tab5.png)
+![Table6](Figures/tab6.png)
+
+The results of our experiments are presented in Tables, 1, 2, 3, 4, 5, and 6. Tables 1, 2, and 3, shows the results of the three models when tested on the indoor dataset. Tables, 4, 5, and 6, shows the results of the three models when tested on the outdoor dataset.
+
+We see that the NST methods are outperforming the other baselines a significant proportion of the time. RegNetY-002 with NST produced a decrease of 20% in Steer-MAE, 12% in Steer-SW-MAE, 16% in Action-MAE. RegNetY-004 with NST produced an decrease of 14% in Steer-MAE, 11% in Steer-SW-MAE, 7% in Action-MAE and 18% in Action-SW-MAE. This is promising because the NST methods do not add any stages to the existing pipelines whereas the others do. The methods based on SAM or depth-anything involve running RGB image through a large model, which significantly increases latency. This means that in order to reduce it, one would have to employ a substantial amount of additional compute resources to reduce latency. The NST method on the other hand only requires the compute during training, while also reducing the amount of human effort compared to other domain randomization methods.
+
+Thus, NST is a best of both-worlds as it reduces human effort for domain randomization and increase performance, all without increasing latency.
